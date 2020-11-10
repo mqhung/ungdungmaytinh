@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+</head>
+<body>
+<h3>Calculator</h3>
+<table>
+    <tr>
+        <td>
+            <label for="num1"></label>
+            <input type="text" id="num1">
+        </td>
+        <td>
+            <label for="num2"></label>
+            <input type="text" id="num2">
+        </td>
+    </tr>
+</table>
+<br>
+<input type="button" onclick="do_add()" value="Addition(+)"> &nbsp;
+<input type="button" onclick="do_sub()" value="Subtraction(-)"> &nbsp;
+<input type="button" onclick="do_mul()" value="Multiplication(*)"> &nbsp;
+<input type="button" onclick="do_div()" value="Division(/)"> &nbsp;
+<p id="ketqua"></p>
+</body>
+<script>
+    function do_add(){
+        ketqua.innerText = 'Result Addition: '+ (+num1.value + +num2.value);
+    }
+    function do_sub(){
+        ketqua.innerText = 'Result Subtraction: '+ (+num1.value - +num2.value);
+    }
+    function do_mul(){
+        ketqua.innerText = 'Result Multiplication: '+ (+num1.value * +num2.value);
+    }
+    function do_div(){
+        ketqua.innerText = 'Result Division: '+ (+num1.value / +num2.value);
+    }
+</script>
+</html>
